@@ -10,7 +10,7 @@ const forecast = (latitude, longitude, callback)=>{
             callback('wrong co-ordinates', undefined)
         }
         else{
-            callback(undefined, body.current.weather_descriptions[0] + ', It is currently ' + body.current.temperature + ' Degree Celcius')
+            callback(undefined, body.current.weather_descriptions[0] + ', It is currently ' + body.current.temperature + ' Degree Celcius. The humidity is ' + body.current.humidity + '%')
         }
 
     })
